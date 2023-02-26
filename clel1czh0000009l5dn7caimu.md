@@ -141,10 +141,10 @@ trySetRate - Initializes RateLimiter's state and stores config to Redis server.
 setRate - Updates RateLimiter's state and stores config to Redis server.
 
 trySetRate uses [HSETNX](https://redis.io/commands/hsetnx/) redis command  
-Sets `field` in the hash stored at `key` to `value`, only if `field` does not yet exist.  
-If `field` already exists, this operation has no effect.  
-  
-setRate uses [`HSET`](https://redis.io/commands/hset/),
+This command sets `field` in the hash stored at `key` to `value`, only if `field` does not yet exist.  
+If `field` already exists, this operation has no effect.
+
+setRate uses [`HSET`](https://redis.io/commands/hset/) redis command
 
 This command overwrites the values of specified fields that exist in the hash. If `key` doesn't exist, a new key holding a hash is created.
 
