@@ -1,4 +1,13 @@
-# Rate Limiting in spring boot with Redisson
+---
+title: "Rate Limiting in spring boot with Redisson"
+seoDescription: "how to enable rate limiting in spring boot using Redisson. Check redis commands used to create the rate limiter"
+datePublished: Sun Feb 26 2023 06:54:33 GMT+0000 (Coordinated Universal Time)
+cuid: clel1czh0000009l5dn7caimu
+slug: rate-limiting-in-spring-boot-with-redisson
+cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/a-hCmlnehyU/upload/75594fca93896aed67b7f781d6bcbd78.jpeg
+tags: redis, java, springboot, ratelimit
+
+---
 
 Rate limiting is a common technique used to control the amount of traffic that a service or application receives. By limiting the rate of incoming requests, you can prevent overloading of your servers and ensure that your application runs smoothly.
 
@@ -162,7 +171,7 @@ http://localhost:8080/api/update-rate-limiter?rate=10&rateInterval=1
 6) "0"
 ```
 
-You can check all the redis commands that redission is enabling redis logs, For steps check this: [https://til.hashnode.dev/enable-redis-logs](https://til.hashnode.dev/enable-redis-logs)
+You can check all the redis commands that redission is executing by enabling redis logs, For steps check this: [https://til.hashnode.dev/enable-redis-logs](https://til.hashnode.dev/enable-redis-logs)
 
 ### **Per-client rate limiting**
 
@@ -238,5 +247,7 @@ If you want to implement a basic rate limiter in redis check this
 [Redisson Rate limiter](https://redisson.org/glossary/rate-limiter.html)
 
 Check the code for this example: [https://github.com/nkalra0123/rate-limiting](https://github.com/nkalra0123/rate-limiting)
+
+For part 2 check this: [https://til.hashnode.dev/rate-limiting-in-spring-boot-with-redisson-part-2](https://til.hashnode.dev/rate-limiting-in-spring-boot-with-redisson-part-2)
 
 If you liked this blog, [**you can follow me on twitter**](https://twitter.com/nkalra0123), and learn something new with me.
