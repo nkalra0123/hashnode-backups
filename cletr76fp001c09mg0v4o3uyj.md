@@ -149,7 +149,7 @@ local released = 0;
 for i, v in ipairs(expiredValues) 
 do local random, permits = struct.unpack('fI', v);
 released = released + permits;
-end; 
+end;
 ```
 
 Find all the values from "{my-rate-limiter}:permits" that has to be removed, as these values are before the 1 min window, that we defined
@@ -168,7 +168,7 @@ end;
 Now remove these values, found in the previous step.
 
 ```bash
-currentValue = tonumber(currentValue) + released; 
+currentValue = tonumber(currentValue) + released;
 ```
 
 With this we find, the number of new permits that we have, and set that value in "{my-rate-limiter}:value"
@@ -180,7 +180,7 @@ if tonumber(currentValue) < tonumber(ARGV[1])
 else 
 redis.call('zadd', permitsName, ARGV[2], struct.pack('fI', ARGV[3], ARGV[1])); 
 redis.call('decrby', valueName, ARGV[1]); return nil; 
-end; 
+end;
 ```
 
 If currentValue &gt; requested permit, we save the timestamp and reduced the value by 1
@@ -188,3 +188,5 @@ If currentValue &gt; requested permit, we save the timestamp and reduced the val
 The expression `tonumber(nearest[2]) - (tonumber(ARGV[2]) - interval)` calculates the time until the next permit becomes available. It subtracts the current time (`tonumber(ARGV[2])`) from the expiry time of the permit (`tonumber(nearest[2])`) and then adds the interval duration (`interval`). This gives the time until the expiry of the current time window, plus the time until the next permit becomes available.
 
 You can check the formatted code in Redisson github repo: [https://github.com/redisson/redisson/blob/c432023f2735421f1e1998f94ff10e9012bd5f71/redisson/src/main/java/org/redisson/RedissonRateLimiter.java#L178](https://github.com/redisson/redisson/blob/c432023f2735421f1e1998f94ff10e9012bd5f71/redisson/src/main/java/org/redisson/RedissonRateLimiter.java#L178)
+
+If you liked this blog, [**you can follow me on twitter**](https://twitter.com/nkalra0123), and learn something new with me.
