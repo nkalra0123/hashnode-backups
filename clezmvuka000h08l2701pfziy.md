@@ -11,7 +11,7 @@ tags: linux, command-line, jq, scripting
 
 JSON (JavaScript Object Notation) is a widely used format for exchanging data between systems. It is human-readable and easy to parse, making it a popular choice for APIs, configuration files, and data storage. In Linux, the jq command is a powerful tool for processing JSON data. In this blog post, we will explore how to use the jq command for JSON processing.
 
-Installation
+## Installation
 
 jq is not typically installed by default on Linux systems. To install it, you can use your distribution's package manager. For example, on Debian-based systems, you can run the following command:
 
@@ -23,7 +23,7 @@ or
 brew install jq
 ```
 
-Basic Usage
+## Basic Usage
 
 The jq command reads JSON data from standard input or a file and outputs formatted JSON or text. Here are some basic examples of how to use jq:
 
