@@ -30,46 +30,42 @@ The jq command reads JSON data from standard input or a file and outputs formatt
 Let's say we have this JSON file  
 { "users": \[ { "first": "Stevie", "last": "Wonder" }, { "first": "Michael", "last": "Jackson" } \] }
 
-1. Print the contents of a JSON file:
-    
-    ```bash
-    jq '.' users.json
-    ```
-    
-    1. Select a specific key from a JSON file:
-        
-    
-    ```bash
-    jq '.users' users.json
-    ```
-    
-    1. Select multiple keys from a JSON file:
-        
-    
-    ```bash
-    jq '.users[] | {key1: .first, last: .last}'  users.json
-    ```
-    
-    1. Filter JSON data based on a condition:
-        
-    
-    ```bash
-    jq '.users[] | select(.first == "Stevie")' users.json
-    ```
-    
-    We can add "and", "or" conditions in the select statement
-    
-    ```bash
-    select(.role=="assistant" or .role=="user" or .content_type=="text")
-    ```
-    
-    If after adding some select condition, we are getting null values, we can ignore them by adding "select( . != null )"
-    
-    ```bash
-    | select(.role=="assistant" or .role=="user" or .content_type=="text") | select( . != null )
-    ```
-    
-    jq command is a powerful tool for processing JSON data on Linux/mac systems. With its many features and options, it can handle a wide range of JSON processing tasks. By mastering jq, you can streamline your JSON workflows and save time and effort.
-    
+Print the contents of a JSON file:
+
+```bash
+jq '.' users.json
+```
+
+Select a specific key from a JSON file:
+
+```bash
+jq '.users' users.json
+```
+
+Select multiple keys from a JSON file:
+
+```bash
+jq '.users[] | {key1: .first, last: .last}'  users.json
+```
+
+Filter JSON data based on a condition:
+
+```bash
+jq '.users[] | select(.first == "Stevie")' users.json
+```
+
+We can add "and", "or" conditions in the select statement
+
+```bash
+select(.role=="assistant" or .role=="user" or .content_type=="text")
+```
+
+If after adding some select condition, we are getting null values, we can ignore them by adding "select( . != null )"
+
+```bash
+| select(.role=="assistant" or .role=="user" or .content_type=="text") | select( . != null )
+```
+
+jq command is a powerful tool for processing JSON data on Linux/mac systems. With its many features and options, it can handle a wide range of JSON processing tasks. By mastering jq, you can streamline your JSON workflows and save time and effort.
 
 If you liked this blog, [**you can follow me on twitter**](https://twitter.com/nkalra0123), and learn something new with me.
