@@ -1,4 +1,14 @@
-# Learning Kubernetes - Part 6
+---
+title: "Learning Kubernetes - Part 6"
+seoTitle: "10 Essential kubectl Commands for Managing Kubernetes Clusters"
+seoDescription: "we explore ten essential kubectl commands that every Kubernetes user should know. These commands allow you to efficiently manage your cluster"
+datePublished: Sun Feb 19 2023 07:52:41 GMT+0000 (Coordinated Universal Time)
+cuid: cleb3cs3m000208l30w39gona
+slug: learning-kubernetes-part-6
+cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/jOqJbvo1P9g/upload/09fd91fdbad94a387ddf9e4c3f5bf946.jpeg
+tags: kubernetes, k8s
+
+---
 
 Kubernetes is a popular container orchestration tool used for deploying and managing containerized applications at scale. As a Kubernetes user, it's essential to know some useful `kubectl` commands that can help you manage your cluster more efficiently. Here are ten useful `kubectl` commands that you can use:
 
@@ -42,3 +52,5 @@ Namespaces in Kubernetes are a way to create virtual clusters within a physical 
 Each namespace is a unique environment where Kubernetes resources can be created, such as pods, services, and deployments. Resources in one namespace are isolated from resources in other namespaces, so they don't interfere with each other.
 
 By default, Kubernetes has three built-in namespaces: `default`, `kube-system`, and `kube-public`. The `default` namespace is the default namespace that resources are created in if a namespace is not specified. The `kube-system` namespace is used for Kubernetes system resources, and the `kube-public` namespace is used for resources that should be publicly available in the cluster.
+
+If you want to learn more about kubectl commands, you can check this article : [Kubectl Cheat Sheet - 15 Kubernetes Commands & Objects (](https://spacelift.io/blog/kubernetes-cheat-sheet)[spacelift.io](http://spacelift.io)[)](https://spacelift.io/blog/kubernetes-cheat-sheet)
