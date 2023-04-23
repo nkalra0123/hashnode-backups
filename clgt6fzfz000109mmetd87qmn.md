@@ -79,25 +79,7 @@ Then, create `person` table with `id` and `name` as shown below.
 
 Then, take **these steps below** with **MySQL queries**. \*I used **2 command prompts**:
 
-| **Flow** | **Transaction 1 (T1)** | **Transaction 2 (T2)** | **Explanation** |
-| --- | --- | --- | --- |
-| **Step 1** | `BEGIN;` |  | **T1 starts.** |
-| **Step 2** |  | `BEGIN;` | **T2 starts.** |
-| **Step 3** | `SELECT * FROM person;`**1 John**  
-**2 David** |  | **T1 reads 2 rows.** |
-| **Step 4** |  | `INSERT INTO person VALUES (3, 'Tom');` | **T2 inserts the row with** `3` and `Tom` to `person` table. |
-| **Step 5** |  | `COMMIT;` | **T2 commits.** |
-| **Step 6** | `SELECT * FROM person;`  
-  
-**1 John**  
-**2 David** |  | **T1 reads 2 rows after T2 commits.** Phantom read doesn't occur for now!! |
-| **Step 7** | `UPDATE person set name = 'Lisa' where id = 3;` |  | **Now to your surprise, T1 can update the new row which T2 has just inserted from** `Tom` to `Lisa`. |
-| **Step 8** | `SELECT * FROM person;`  
-  
-**1 John**  
-**2 David**  
-**3 Lisa** |  | **Now to your surprise, T1 reads 3 rows after T2 commits.** Phantom read occurs!! |
-| **Step 9** | `COMMIT;` |  | **T1 commits.** |
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1682240807328/e5b68acd-05f7-49aa-b70d-039a1ec4e02a.png align="center")
 
 These steps are from a StackOverflow [answer](https://stackoverflow.com/questions/5444915/how-to-produce-phantom-read-in-repeatable-read-mysql/41178461#41178461)
 
