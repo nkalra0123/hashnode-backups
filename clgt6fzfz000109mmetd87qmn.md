@@ -94,7 +94,7 @@ Then, take **these steps below** with **MySQL queries**. \*I used **2 command pr
 **1 John**  
 **2 David** |  | **T1 reads 2 rows after T2 commits.**  
   
-\*Phantom read doesn't occur for now!! |
+Phantom read doesn't occur for now!! |
 | **Step 7** | `UPDATE person set name = 'Lisa' where id = 3;` |  | **Now to your surprise, T1 can update the new row which T2 has just inserted from** `Tom` to `Lisa`. |
 | **Step 8** | `SELECT * FROM person;`  
   
@@ -102,8 +102,10 @@ Then, take **these steps below** with **MySQL queries**. \*I used **2 command pr
 **2 David**  
 **3 Lisa** |  | **Now to your surprise, T1 reads 3 rows after T2 commits.**  
   
-\*Phantom read occurs!! |
+Phantom read occurs!! |
 | **Step 7** | `COMMIT;` |  | **T1 commits.** |
+
+In addition, I did these steps above in `REPEATABLE READ` in **Postgresql** but **phantom read** didn't occur.
 
 These steps are from a StackOverflow [answer](https://stackoverflow.com/questions/5444915/how-to-produce-phantom-read-in-repeatable-read-mysql/41178461#41178461)
 
