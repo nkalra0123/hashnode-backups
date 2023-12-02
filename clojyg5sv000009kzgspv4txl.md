@@ -36,6 +36,16 @@ source venv/bin/activate
 
 You'll know the virtual environment is activated when you see its name in your terminal prompt.
 
+In case you are using fish shell
+
+**Activate the Virtual Environment**: In the Fish shell, you use the command `source venv/bin/`[`activate.fish`](http://activate.fish) to activate the virtual environment. The command you provided `source venv/bin/activate` is typically used in Bash. For Fish, the script is slightly different.
+
+So, your command in the Fish shell should be:
+
+```bash
+source venv/bin/activate.fish
+```
+
 ### **Step 4: Install Dependencies**
 
 Now that your virtual environment is active, you can install the required packages using `pip`.
