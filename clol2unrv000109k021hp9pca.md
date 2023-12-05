@@ -12,9 +12,8 @@ tags: llm, llama, lmstudio, ollama, mistral
 
 In the ever-evolving landscape of natural language processing, large language models (LLMs) have emerged as powerful tools for understanding and generating human-like text. Running an LLM locally provides enthusiasts and developers with the flexibility to experiment, fine-tune, and explore the capabilities of these models without relying on external services. In this blog post, let's go through the process of setting up and running an LLM on your local machine.
 
-In this series of blog posts, we will learn how to run LLMs locally on your computer.
+In this blog post, we will learn how to run LLMs locally on your computer.
 
-  
 **First, let's learn some keywords that are used in the LLM world**
 
 1. **Tokenization:**
@@ -98,7 +97,6 @@ In this series of blog posts, we will learn how to run LLMs locally on your comp
         
     * *Importance:* The number of parameters in an LLM is a critical factor influencing its capacity to capture intricate language patterns and representations. A "20B parameters model," for instance, signifies a model with 20 billion learned parameters. Larger models with more parameters often demonstrate enhanced performance by capturing more nuanced relationships in language. However, the size of the model also comes with increased computational and resource demands, prompting a careful balance between model complexity, performance gains, and resource requirements in the development and deployment of LLMs.
         
-    
 
 These keywords provide a foundational understanding of the concepts and processes involved in the world of Large Language Models.
 
