@@ -62,11 +62,8 @@ In this blog post, we will learn how to run LLMs locally on your computer.
     
     * *Definition:* A component in neural networks that allows the model to focus on different parts of the input sequence when making predictions.
         
-    * *Importance:* Attention mechanisms enhance the model's ability to consider relevant information while processing input data.
+    * *Importance:* Attention mechanisms enhance the model's ability to consider relevant information while processing input data. [Attention is All You Need](https://research.google/pubs/pub46201/)
         
-    
-    [Attention is All You Need](https://research.google/pubs/pub46201/)
-    
 9. **Hugging Face:**
     
     * *Definition:* A popular platform and library that provides a collection of pre-trained models, including transformers for natural language processing tasks.
