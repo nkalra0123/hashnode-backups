@@ -1,8 +1,18 @@
-# Learning Kubernetes - Part 3
+---
+title: "Learning Kubernetes - Part 3"
+datePublished: Fri Jan 06 2023 16:49:00 GMT+0000 (Coordinated Universal Time)
+cuid: clckr501j000108l5ccys11ke
+slug: learning-kubernetes-part-3
+cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/tjX_sniNzgQ/upload/853617f9e56a248905360eab0ff637ef.jpeg
+tags: kubernetes, k8s
+
+---
 
 **Worker nodes**
 
 Worker nodes, also known as "minions," are the nodes in a Kubernetes cluster that are responsible for running the containerized applications. They communicate with the Master node to receive instructions on what to do and report back on their status.
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1702108283193/205afb4c-bf65-457c-9a59-a3ce036e6221.png align="center")
 
 Each Worker node is composed of a number of components, including:
 
