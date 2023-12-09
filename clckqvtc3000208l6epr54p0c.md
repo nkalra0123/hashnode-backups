@@ -1,6 +1,16 @@
-# Learning Kubernetes - Part 1
+---
+title: "Learning Kubernetes - Part 1"
+datePublished: Fri Jan 06 2023 16:41:51 GMT+0000 (Coordinated Universal Time)
+cuid: clckqvtc3000208l6epr54p0c
+slug: learning-kubernetes-part-1
+cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/tjX_sniNzgQ/upload/853617f9e56a248905360eab0ff637ef.jpeg
+tags: kubernetes, k8s
+
+---
 
 Kubernetes is an open-source container orchestration system for automating the deployment, scaling, and management of containerized applications. It was originally developed by Google and is now maintained by the **Cloud Native Computing Foundation (CNCF).**
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1702107715529/666fbc9d-485b-4fdb-8a26-b0bb906f8404.png align="center")
 
 One of the key benefits of using Kubernetes is its ability to abstract away the underlying infrastructure and provide a consistent environment for deploying applications. This means that you can run your applications on any infrastructure that supports Kubernetes, including on-premises servers, public clouds, or a hybrid environment.
 
