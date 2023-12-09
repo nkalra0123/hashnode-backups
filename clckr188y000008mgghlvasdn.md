@@ -1,8 +1,18 @@
-# Learning Kubernetes - Part 2
+---
+title: "Learning Kubernetes - Part 2"
+datePublished: Fri Jan 06 2023 16:46:04 GMT+0000 (Coordinated Universal Time)
+cuid: clckr188y000008mgghlvasdn
+slug: learning-kubernetes-part-2
+cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/qMehmIyaXvY/upload/52b8b584bc226707773e9dbe0963efcc.jpeg
+tags: kubernetes, k8s
+
+---
 
 **Master node**
 
 The Master node in a Kubernetes cluster is the central control plane that is responsible for the overall management of the cluster. It is composed of a number of components, each with its own unique role to play in the orchestration of the cluster.
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1702108200890/b92da1fd-43a1-4bd5-bfb8-14f5bd26f03c.png align="center")
 
 Some of the key components of the Master node include:
 
