@@ -126,3 +126,5 @@ public void method() {
 Traditional Java threads have served very well for a long time. With the growing demand of scalability and high throughput in the world of microservices, virtual threads will prove a milestone feature in Java.
 
 With virtual thread, a program can handle millions of threads with a small amount of physical memory and computing resources, otherwise not possible with traditional platform threads.
+
+If you liked this blog, [**you can follow me on twitter**](https://twitter.com/nkalra0123), and learn something new with me.
