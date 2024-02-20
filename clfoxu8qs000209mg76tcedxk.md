@@ -8,6 +8,8 @@ tags: spring, kafka, springboot
 
 ---
 
+To learn basics about Dead letter queue check this : [https://learncodecamp.net/spring-kafka-dead-letter-queue/](https://learncodecamp.net/spring-kafka-dead-letter-queue/)
+
 ## Introduction
 
 This repository provides a sample of non-blocking retries and dead letter topics (aka [reliable reprocessing and dead letter queues](https://eng.uber.com/reliable-reprocessing/)) with Apache Kafka. The sample is implemented using Spring Boot and Spring Kafka.
@@ -150,5 +152,4 @@ Non-blocking retries allow processing of subsequent records from the same partit
 This article is a copy of an article published here: [https://evgeniy-khyst.com/spring-kafka-non-blocking-retries-and-dlt/](https://evgeniy-khyst.com/spring-kafka-non-blocking-retries-and-dlt/)  
 But this site is down as of now, and the owner has also archieved the [github repo](https://github.com/evgeniy-khist/spring-kafka-non-blocking-retries-and-dlt), I have forked the repo in my [github](https://github.com/nkalra0123/spring-kafka-non-blocking-retries-and-dlt).
 
-  
 We will be using this article and code sample to improve spring retry, by changing a few things in RetryableTopic annotation in part 2.
