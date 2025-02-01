@@ -9,6 +9,8 @@ tags: cors, cors-errors
 
 ---
 
+You can check my latest articles on [https://learncodecamp.net/](https://learncodecamp.net/)
+
 Cross-Origin Resource Sharing (CORS) is a security feature implemented by web browsers to control how web pages in one domain can request and interact with resources from another domain. CORS is crucial for maintaining a secure and controlled web environment.
 
 In this blog post, we'll delve into one of the common CORS-related issues we encounter—the "Access-Control-Allow-Origin" error—and explore ways to address it.
