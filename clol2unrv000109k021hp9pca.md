@@ -10,6 +10,8 @@ tags: llm, llama, lmstudio, ollama, mistral
 
 ---
 
+You can check my latest articles on AI on [https://learncodecamp.net/category/ai/](https://learncodecamp.net/category/ai/)
+
 In the ever-evolving landscape of natural language processing, large language models (LLMs) have emerged as powerful tools for understanding and generating human-like text. Running an LLM locally provides enthusiasts and developers with the flexibility to experiment, fine-tune, and explore the capabilities of these models without relying on external services. In this blog post, let's go through the process of setting up and running an LLM on your local machine.
 
 In this blog post, we will learn how to run LLMs locally on your computer.
