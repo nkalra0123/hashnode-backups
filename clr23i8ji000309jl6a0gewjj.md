@@ -10,6 +10,8 @@ tags: java, virtualthreads
 
 ---
 
+You can check my latest articles on [https://learncodecamp.net/](https://learncodecamp.net/)
+
 In the ever-evolving landscape of Java development, Project Loom has emerged as a game-changer, introducing a revolutionary concept known as virtual threads. In this blog post, we'll dive deep into the world of virtual threads, exploring their capabilities, benefits, and the underlying magic that makes them a powerful tool for developers.
 
 ## **Understanding the Need for Virtual Threads**
