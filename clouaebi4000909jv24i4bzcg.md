@@ -12,6 +12,8 @@ tags: command-line, linux-for-beginners
 
 ## **What is AWK?**
 
+You can check my latest articles on [https://learncodecamp.net/](https://learncodecamp.net/)
+
 Awk is a programming language designed for text processing. At its core, AWK is used for scanning and processing patterns in files and then taking action based on those patterns.
 
 ## **Basic Syntax of AWK**
